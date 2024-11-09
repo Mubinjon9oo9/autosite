@@ -166,7 +166,7 @@ a {
     color: #fff;
 }
 .chVin{
-    background-image: url('banner-2-new.jpg');
-    background-size:cover;
-    height: 300px;
+    padding: 0!important;
+    width: 250px;
+    height: 250px;
 }
