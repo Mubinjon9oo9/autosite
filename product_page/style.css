@@ -141,3 +141,32 @@ a {
     color: #E8DFD1;
     font-size: 0.9rem;
 }
+.manage{
+    width: 100%;
+    padding: 8px 10px;
+    margin: 0 0 10px 0;
+    border-radius: 50px;
+    background-color: transparent;
+    font-size: 18px;
+}
+.manage_d{
+    border:1px #d9534f solid;
+    color: #d9534f;
+}
+.manage_d:hover{
+    background-color: #d9534f;
+    color: #fff;
+}
+.manage_c{
+    border:1px royalblue solid;
+    color: royalblue;
+}
+.manage_c:hover{
+    background-color: royalblue;
+    color: #fff;
+}
+.chVin{
+    background-image: url('banner-2-new.jpg');
+    background-size:cover;
+    height: 300px;
+}
