@@ -39,8 +39,7 @@
                 <div class="info_item"><span>Auction:</span> Copart</div>
                 <div class="info_item"><span>Date of Sale:</span> 01.01.2024</div>
                 <div class="info_item"><span>Lot number:</span> 12345678</div>
-                <div class="info_item" style="padding-top: 20px; text-transform: uppercase; font-size: 1.3rem;"><span>Status:</span> <strong class="sold">SOLD - $999999</strong></div>
-            </div>
+                </div>
         </div>
     </section>
 
@@ -48,6 +47,9 @@
     <!-- <section class="ad_banner">
         <p>💥 Don't miss our special offers on premium cars! Limited time only. 💥</p>
     </section> -->
+    <section class="epicVin">
+        <a href="https://epicvin.com?a_aid=09t9pxxxz2w8r&amp;a_aid=09t9pxxxz2w8r&amp;a_bid=9zplq59k" target="_top"><img src="https://img123.s3.amazonaws.com/affiliate-banners/4/970x250.png" alt="" title="" width="970" height="250" /></a><img style="border:0;border-radius: 50px;" src="https://affiliate.epicvin.com/scripts/014iuuh?a_aid=09t9pxxxz2w8r&amp;a_bid=9zplq59k" width="1" height="1" alt="" />
+    </section>
 
     <!-- Additional Information Blocks -->
     <section class="additional_info">
@@ -73,10 +75,15 @@
         </div>
 
         <!-- Image Link Block -->
-        <div class="info_block extra_block chVin">
-            <a href="https://epicvin.com?a_aid=09t9pxxxz2w8ra_aid=09t9pxxxz2w8r&amp;a_bid=bg5sb3w1" target="_top">
-                <img style="border-radius: 20px;" src="https://img123.s3.amazonaws.com/affiliate-banners/4/250x250.png" alt="" title="" width="250" height="250" /></a>
-                <img style="border:0;" src="https://affiliate.epicvin.com/scripts/014iuuh?a_aid=09t9pxxxz2w8ra_bid=bg5sb3w1" width="1" height="1" alt="" />
+        <div class="info_block extra_block">
+            <!-- Selling Price Block -->
+            <div class="block futuristic selling">
+                <p>Final bid</p>
+                <div class="price">$25,000</div>
+                <div class="progress-container">
+                  <div class="progress-bar"></div>
+                </div>
+              </div>
         </div>
     </section>
 
@@ -84,5 +91,26 @@
     <footer class="footer">
         <p>&copy; 2024 Car Auctions. All rights reserved.</p>
     </footer>
+    <script>
+        // JavaScript for count-up animation on load
+        document.addEventListener("DOMContentLoaded", function() {
+            // Count-up effect for the price block
+            let priceElement = document.getElementById("price");
+            let price = 0;
+            let targetPrice = 9999;
+            let duration = 2000;
+            let interval = 20;
+            let step = targetPrice / (duration / interval);
+    
+            let countUp = setInterval(function() {
+                price += step;
+                if (price >= targetPrice) {
+                    price = targetPrice;
+                    clearInterval(countUp);
+                }
+                priceElement.textContent = `$${Math.floor(price)}`;
+            }, interval);
+        });
+    </script>
 </body>
 </html>

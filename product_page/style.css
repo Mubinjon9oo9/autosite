@@ -165,8 +165,59 @@ a {
     background-color: royalblue;
     color: #fff;
 }
-.chVin{
-    padding: 0!important;
-    width: 250px;
+
+/* Selling Block */
+.selling .price {
+    font-size: 32px;
+    font-weight: bold;
+    color: #409f71;
+    margin: 10px 0;
+  }
+  
+  .selling .progress-container {
+    width: 80%;
+    height: 8px;
+    background: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  
+  .selling .progress-bar {
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #85ef2e, #409f71);
+    animation: progress 3s linear forwards;
+  }
+  @keyframes progress {
+    to {
+      width: 100%;
+    }
+  }
+  .block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
     height: 250px;
-}
+  }
+  
+  .block p {
+    margin: 10px 0 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #aaa;
+  }
+  .epicVin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .epicVin img{
+    border-radius: 20px;
+  }
